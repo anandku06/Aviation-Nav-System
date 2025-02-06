@@ -106,7 +106,7 @@ _Response:_
 ## **👥 Team Collaboration (GitHub Workflow)**
 1. **Clone the repo**:
    ```sh
-   git clone https://github.com/your-team/aviation-nav.git
+   git clone https://github.com/anandku06/aviation-nav.git
    ```
 2. **Create a new branch**:
    ```sh
