@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./Assets/planeIcon.png" type="image/x-icon">
+    <title>AviationNav</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    
     <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-100/30 backdrop-blur-md py-2">
         <div class="container mx-auto px-4 py-3 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
@@ -79,11 +79,11 @@
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="/explore" class="py-3 px-8 bg-sky-600 text-white rounded-lg hover:bg-sky-700 transition-colors">
+                        <a href="/about" class="py-3 px-8 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 transition-colors">
                             Explore the Map
                         </a>
-                        <a href="/about" class="py-3 px-8 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 transition-colors">
-                            Learn More
+                        <a href="/explore" class="py-3 px-8 bg-sky-600 text-white rounded-lg hover:bg-sky-700 transition-colors">
+                            Get Started
                         </a>
                     </div>
                     
@@ -162,7 +162,7 @@
                         <span class="h-10 w-10 text-sky-600"><img width="30px" src="./Assets/plane.png" alt=""></span>
                     </div> -->
                     
-                    <div class="absolute -bottom-4 -left-4 px-4 py-2 bg-white rounded-lg shadow-lg animate-bounce">
+                    <!-- <div class="absolute -bottom-4 -left-4 px-4 py-2 bg-white rounded-lg shadow-lg animate-bounce">
                         <div class="flex items-center">
                             <div class="w-8 h-8 rounded-full bg-sky-100 flex items-center justify-center mr-2">
                                 <span class="h-4 w-4 text-sky-600"><img width="30px" src="./Assets/location.png" alt=""></span>
@@ -172,7 +172,7 @@
                                 <p class="text-xs text-gray-500">40.7128° N, 74.0060° W</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

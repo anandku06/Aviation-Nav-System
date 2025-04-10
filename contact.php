@@ -82,7 +82,7 @@
                         <span class="bg-blue-100 p-3 rounded-full mr-4">
                             <img src="Assets/phone.png" width="25" alt="">
                         </span>
-                        <a href="tel:+91 81306 10431" class="text-blue-600 hover:underline">+91 8130610431</a>
+                        <a href="tel:+91 81306 10431" class="text-blue-600 hover:underline">+</a>
                     </li>
                     <li class="flex items-center">
                         <span class="bg-blue-100 p-3 rounded-full mr-4">
