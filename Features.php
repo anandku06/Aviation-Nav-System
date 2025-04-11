@@ -63,7 +63,7 @@
     </header>
 
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
+        <!-- <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
             <div class="text-4xl text-center mb-4">
                 <img src="images/interactive-mapping.png" alt="Interactive 3D Mapping" class="w-12 h-12 mx-auto" 
                      onerror="this.style.display='none';this.nextSibling.style.display='block'">
@@ -74,9 +74,9 @@
             <div class="bg-blue-50 p-4 rounded-lg mt-4">
                 <p class="text-blue-900 font-medium text-xs"><strong>Benefit:</strong> Gain a better spatial understanding of routes and approach paths in relation to terrain.</p>
             </div>
-        </div>
+        </div> -->
 
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
+        <!-- <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
             <div class="text-4xl text-center mb-4">
                 <img src="images/navigation-data.png" alt="Comprehensive Navigation Data" class="w-12 h-12 mx-auto"
                      onerror="this.style.display='none';this.nextSibling.style.display='block'">
@@ -87,7 +87,7 @@
             <div class="bg-blue-50 p-4 rounded-lg mt-4">
                 <p class="text-blue-900 font-medium text-xs"><strong>Benefit:</strong> Plan with confidence using accurate, up-to-date navigational information.</p>
             </div>
-        </div>
+        </div> -->
 
         <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
             <div class="text-4xl text-center mb-4">
@@ -128,7 +128,7 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
+        <!-- <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
             <div class="text-4xl text-center mb-4">
                 <img src="images/collaboration.png" alt="Collaboration Tools" class="w-12 h-12 mx-auto"
                      onerror="this.style.display='none';this.nextSibling.style.display='block'">
@@ -139,7 +139,7 @@
             <div class="bg-blue-50 p-4 rounded-lg mt-4">
                 <p class="text-blue-900 font-medium text-xs"><strong>Benefit:</strong> Facilitate coordination and planning among flight crew members or flying clubs.</p>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section class="bg-blue-50 p-8 rounded-lg text-center mt-12 w-full max-w-4xl">
