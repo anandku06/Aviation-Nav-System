@@ -19,17 +19,17 @@
                 </a>
     
                 <nav class="hidden md:flex space-x-6 ">
-                    <a href="./index.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Home</a>
-                    <a href="./about.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">About</a>
-                    <a href="./Features.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700 underline decoration-blue-600 decoration-[3px] underline-offset-4">Features</a>
-                    <a href="./how-to-use.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">How to Use</a>
-                    <a href="./data-sources.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Data Sources</a>
-                    <a href="./case-studies.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Case Studies</a>
-                    <a href="./contact.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Contact</a>
+                    <a href="./index.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Home</a>
+                    <a href="./about.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">About</a>
+                    <a href="./Features.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700 underline decoration-blue-600 decoration-[3px] underline-offset-4">Features</a>
+                    <a href="./how-to-use.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">How to Use</a>
+                    <a href="./data-sources.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Data Sources</a>
+                    <a href="./case-studies.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Case Studies</a>
+                    <a href="./contact.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Contact</a>
                 </nav>
     
                 <div class="flex items-center space-x-4">
-                    <a href="./Login" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
+                    <a href="./Login.php" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
     
                     <button type="button" class="md:hidden p-2 text-gray-600 hover:text-sky-600 focus:outline-none">
                         <span class="sr-only">Open main menu</span>
@@ -44,14 +44,14 @@
     
             <div class="md:hidden overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
                 <div class="py-2 space-y-1 bg-white rounded-lg shadow-lg">
-                    <a href="./index.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Home</a>
+                    <a href="./index.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Home</a>
                     <a href="./about.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">About</a>
-                    <a href="./Features.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Features</a>
-                    <a href="./how-to-use.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">How to Use</a>
-                    <a href="./data-sources.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Data Sources</a>
-                    <a href="./case-studies.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Case Studies</a>
-                    <a href="./contact.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Contact</a>
-                    <a href="/explore.html" class="block px-2 py-1 text-base font-medium text-white bg-sky-600 hover:bg-sky-700 transition-colors">Explore Map</a>
+                    <a href="./Features.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Features</a>
+                    <a href="./how-to-use.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">How to Use</a>
+                    <a href="./data-sources.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Data Sources</a>
+                    <a href="./case-studies.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Case Studies</a>
+                    <a href="./contact.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Contact</a>
+                    <a href="/explore.php" class="block px-2 py-1 text-base font-medium text-white bg-sky-600 hover:bg-sky-700 transition-colors">Explore Map</a>
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@
     </header>
 
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
+        <!-- <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
             <div class="text-4xl text-center mb-4">
                 <img src="images/interactive-mapping.png" alt="Interactive 3D Mapping" class="w-12 h-12 mx-auto" 
                      onerror="this.style.display='none';this.nextSibling.style.display='block'">
@@ -74,9 +74,9 @@
             <div class="bg-blue-50 p-4 rounded-lg mt-4">
                 <p class="text-blue-900 font-medium text-xs"><strong>Benefit:</strong> Gain a better spatial understanding of routes and approach paths in relation to terrain.</p>
             </div>
-        </div>
+        </div> -->
 
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
+        <!-- <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
             <div class="text-4xl text-center mb-4">
                 <img src="images/navigation-data.png" alt="Comprehensive Navigation Data" class="w-12 h-12 mx-auto"
                      onerror="this.style.display='none';this.nextSibling.style.display='block'">
@@ -87,7 +87,7 @@
             <div class="bg-blue-50 p-4 rounded-lg mt-4">
                 <p class="text-blue-900 font-medium text-xs"><strong>Benefit:</strong> Plan with confidence using accurate, up-to-date navigational information.</p>
             </div>
-        </div>
+        </div> -->
 
         <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
             <div class="text-4xl text-center mb-4">
@@ -128,7 +128,7 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
+        <!-- <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
             <div class="text-4xl text-center mb-4">
                 <img src="images/collaboration.png" alt="Collaboration Tools" class="w-12 h-12 mx-auto"
                      onerror="this.style.display='none';this.nextSibling.style.display='block'">
@@ -139,7 +139,7 @@
             <div class="bg-blue-50 p-4 rounded-lg mt-4">
                 <p class="text-blue-900 font-medium text-xs"><strong>Benefit:</strong> Facilitate coordination and planning among flight crew members or flying clubs.</p>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section class="bg-blue-50 p-8 rounded-lg text-center mt-12 w-full max-w-4xl">
