@@ -34,12 +34,7 @@
                     <a href="./Login.php" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
 
                  
-                </nav>
-    
-                <div class="flex items-center space-x-4">
-                    <a href="./Login" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
-
-    
+                </nav>    
                     <button type="button" class="md:hidden p-2 text-gray-600 hover:text-sky-600 focus:outline-none">
                         <span class="sr-only">Open main menu</span>
                         <div class="relative h-6 w-6">
