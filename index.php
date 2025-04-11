@@ -7,9 +7,7 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    
-
-    <link rel="shortcut icon" href="./Assets/planeIcon.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./Assets/planeIcon.png" type="image/x-icon"> -->
     <title>AviationNav</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
