@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    
+
     <link rel="shortcut icon" href="./Assets/planeIcon.png" type="image/x-icon">
     <title>AviationNav</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
+
     <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-100/30 backdrop-blur-md py-2">
         <div class="container mx-auto px-4 py-3 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
@@ -17,17 +24,21 @@
                 </a>
     
                 <nav class="hidden md:flex space-x-6 ">
-                    <a href="./index.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700 underline decoration-blue-600 decoration-[3px] underline-offset-4">Home</a>
-                    <a href="./about.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">About</a>
-                    <a href="./Features.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Features</a>
-                    <a href="./how-to-use.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">How to Use</a>
-                    <a href="./data-sources.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Data Sources</a>
-                    <a href="./case-studies.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Case Studies</a>
-                    <a href="./contact.html" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Contact</a>
+
+                    <a href="./index.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700 underline decoration-blue-600 decoration-[3px] underline-offset-4">Home</a>
+                    <a href="./about.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">About</a>
+                    <a href="./Features.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Features</a>
+                    <a href="./how-to-use.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">How to Use</a>
+                    <a href="./data-sources.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Data Sources</a>
+                    <a href="./case-studies.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Case Studies</a>
+                    <a href="./contact.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Contact</a>
                 </nav>
+    
+               
     
                 <div class="flex items-center space-x-4">
                     <a href="./Login" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
+
     
                     <button type="button" class="md:hidden p-2 text-gray-600 hover:text-sky-600 focus:outline-none">
                         <span class="sr-only">Open main menu</span>
@@ -42,14 +53,16 @@
     
             <div class="md:hidden overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
                 <div class="py-2 space-y-1 bg-white rounded-lg shadow-lg">
-                    <a href="./index.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Home</a>
+
+                    <a href="./index.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Home</a>
                     <a href="./about.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">About</a>
-                    <a href="./Features.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Features</a>
-                    <a href="./how-to-use.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">How to Use</a>
-                    <a href="./data-sources.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Data Sources</a>
-                    <a href="./case-studies.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Case Studies</a>
-                    <a href="./contact.html" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Contact</a>
-                    <a href="/explore.html" class="block px-2 py-1 text-base font-medium text-white bg-sky-600 hover:bg-sky-700 transition-colors">Explore Map</a>
+                    <a href="./Features.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Features</a>
+                    <a href="./how-to-use.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">How to Use</a>
+                    <a href="./data-sources.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Data Sources</a>
+                    <a href="./case-studies.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Case Studies</a>
+                    <a href="./contact.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Contact</a>
+                    <a href="/explore.php" class="block px-2 py-1 text-base font-medium text-white bg-sky-600 hover:bg-sky-700 transition-colors">Explore Map</a>
+
                 </div>
             </div>
         </div>
@@ -79,11 +92,19 @@
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4">
+
+                        <a href="/explore" class="py-3 px-8 bg-sky-600 text-white rounded-lg hover:bg-sky-700 transition-colors">
+                            Explore the Map
+                        </a>
+                        <a href="/about" class="py-3 px-8 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 transition-colors">
+                            Learn More
+                        </a>
                         <a href="/about" class="py-3 px-8 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 transition-colors">
                             Explore the Map
                         </a>
                         <a href="/explore" class="py-3 px-8 bg-sky-600 text-white rounded-lg hover:bg-sky-700 transition-colors">
                             Get Started
+
                         </a>
                     </div>
                     
@@ -162,8 +183,10 @@
                         <span class="h-10 w-10 text-sky-600"><img width="30px" src="./Assets/plane.png" alt=""></span>
                     </div> -->
                     
+
+
                     <!-- <div class="absolute -bottom-4 -left-4 px-4 py-2 bg-white rounded-lg shadow-lg animate-bounce">
-                        <div class="flex items-center">
+          <div class="flex items-center">
                             <div class="w-8 h-8 rounded-full bg-sky-100 flex items-center justify-center mr-2">
                                 <span class="h-4 w-4 text-sky-600"><img width="30px" src="./Assets/location.png" alt=""></span>
                             </div>
@@ -172,7 +195,11 @@
                                 <p class="text-xs text-gray-500">40.7128° N, 74.0060° W</p>
                             </div>
                         </div>
+
+                    </div>
+
                     </div> -->
+
                 </div>
             </div>
         </div>
