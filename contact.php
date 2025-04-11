@@ -23,6 +23,7 @@
             </a>
 
             <nav class="hidden md:flex space-x-6 ">
+
                 <a href="./index.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Home</a>
                 <a href="./about.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">About</a>
                 <a href="./Features.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Features</a>
@@ -32,8 +33,11 @@
                 <a href="./contact.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700 underline decoration-blue-600 decoration-[3px] underline-offset-4">Contact</a>
             </nav>
 
+       
+
             <div class="flex items-center space-x-4">
-                <a href="./Login.php" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
+                <a href="./Login" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
+
 
                 <button type="button" class="md:hidden p-2 text-gray-600 hover:text-sky-600 focus:outline-none">
                     <span class="sr-only">Open main menu</span>
@@ -48,6 +52,7 @@
 
         <div class="md:hidden overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
             <div class="py-2 space-y-1 bg-white rounded-lg shadow-lg">
+
                 <a href="./index.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Home</a>
                 <a href="./about.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">About</a>
                 <a href="./Features.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Features</a>
@@ -56,6 +61,8 @@
                 <a href="./case-studies.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Case Studies</a>
                 <a href="./contact.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Contact</a>
                 <a href="./Login.php" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
+
+
             </div>
         </div>
     </div>
@@ -82,7 +89,9 @@
                         <span class="bg-blue-100 p-3 rounded-full mr-4">
                             <img src="Assets/phone.png" width="25" alt="">
                         </span>
+
                         <a href="tel:+91 81306 10431" class="text-blue-600 hover:underline">+91 8130610431</a>
+
                     </li>
                     <li class="flex items-center">
                         <span class="bg-blue-100 p-3 rounded-full mr-4">
