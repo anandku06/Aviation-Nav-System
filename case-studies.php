@@ -7,51 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Studies</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  
+    <style>
+        .hamburger-line {
+    transition: all 0.3s ease-in-out;
+}
+.wrap{
+        transition: all 0.3s ease-in-out;
+
+    }
+</style>
 </head>
 <body class="bg-gray-100">
 <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-100/30 backdrop-blur-md py-2">
     <div class="container mx-auto px-4 py-3 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center">
             <a href="/" class="flex items-center space-x-2 transition-opacity hover:opacity-80">
-                <img width="30px" src="./Assets/plane.png">
-                <span class="font-display text-l font-semibold text-navy-950">AviationNav</span>
+                <img width="30px" src="./Assets/plane.png" alt="AviationNav Logo">
+                <span class="font-display text-lg font-semibold text-navy-950">AviationNav</span>
             </a>
 
-            <nav class="hidden md:flex space-x-6 ">
-
-                <a href="./index.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Home</a>
-                <a href="./about.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">About</a>
-                <a href="./Features.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Features</a>
-                <a href="./how-to-use.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">How to Use</a>
-                <a href="./data-sources.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Data Sources</a>
-                <a href="./case-studies.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700 underline decoration-blue-600 decoration-[3px] underline-offset-4">Case Studies</a>
-                <a href="./contact.php" class="relative font-medium text-s transition-colors duration-300 hover:text-sky-600 text-gray-700">Contact</a>
-            </nav>
-
-            <div class="flex items-center space-x-4">
-                <a href="./Login.php" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
-
+            <nav class="hidden md:flex text-sm space-x-6">
+                <a href="./index.php" class="relative font-medium text-sm transition-colors duration-300 hover:text-sky-600 text-gray-700 ">Home</a>
+                <a href="./about.php" class="relative font-medium text-sm transition-colors duration-300 hover:text-sky-600 text-gray-700">About</a>
+                <a href="./Features.php" class="relative font-medium text-sm transition-colors duration-300 hover:text-sky-600 text-gray-700">Features</a>
+                <a href="./how-to-use.php" class="relative font-medium text-sm transition-colors duration-300 hover:text-sky-600 text-gray-700">How to Use</a>
+                <a href="./data-sources.php" class="relative font-medium text-sm transition-colors duration-300 hover:text-sky-600 text-gray-700">Data Sources</a>
+                <a href="./case-studies.php" class="relative font-medium text-sm transition-colors duration-300 hover:text-sky-600 text-gray-700 underline decoration-blue-600 decoration-[3px] underline-offset-4">Case Studies</a>
+                <a href="./contact.php" class="relative font-medium text-sm transition-colors duration-300 hover:text-sky-600 text-gray-700">Contact</a>
             </nav>
 
             <div class="flex items-center space-x-4">
                 <a href="./Login" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
 
-
-                <button type="button" class="md:hidden p-2 text-gray-600 hover:text-sky-600 focus:outline-none">
+                <button type="button" class="md:hidden  p-2 text-gray-600 hover:text-sky-600 focus:outline-none" aria-label="Toggle menu" onclick="toggleMenu()">
                     <span class="sr-only">Open main menu</span>
-                    <div class="relative h-6 w-6">
-                        <span class="absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out"></span>
-                        <span class="absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out"></span>
-                        <span class="absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out"></span>
+                    <div class="relative h-6 w-6 " id="wrap">
+                        <span class="hamburger-line absolute block h-0.5 w-8 bg-current transform transition duration-300 ease-in-out top-1"></span>
+                        <span class="hamburger-line absolute block h-0.5 w-8 bg-current transform transition duration-300 ease-in-out top-3"></span>
+                        <span class="hamburger-line absolute block h-0.5 w-8 bg-current transform transition duration-300 ease-in-out top-5"></span>
                     </div>
                 </button>
             </div>
         </div>
 
-        <div class="md:hidden overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+        <div id="mobile-menu" class="md:hidden overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
             <div class="py-2 space-y-1 bg-white rounded-lg shadow-lg">
-
                 <a href="./index.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Home</a>
                 <a href="./about.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">About</a>
                 <a href="./Features.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Features</a>
@@ -59,13 +59,12 @@
                 <a href="./data-sources.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Data Sources</a>
                 <a href="./case-studies.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Case Studies</a>
                 <a href="./contact.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Contact</a>
-                <a href="./Login.php" class="hidden md:inline-flex button-primary px-3 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition-colors text-sm font-semibold">Log In</a>
-
-
+                <!-- <a href="/explore.php" class="block px-4 py-3 text-base font-medium text-white bg-sky-600 hover:bg-sky-700 transition-colors">Explore Map</a> -->
+                <a href="./start" class="block px-4 py-3 text-base font-medium text-white bg-sky-600 hover:bg-sky-700 transition-colors">Get Started</a>
             </div>
         </div>
     </div>
-</header>
+</header>  
 <main class="container mt-28 mx-auto px-4">
         <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">Case Studies</h1>
         <p class="text-center m-auto w-2/3 text-gray-600 mb-12">Discover how aviation professionals around the world use AviationNav to improve safety, efficiency, and operational performance.</p>
@@ -147,5 +146,29 @@
     <?php
         include './components/footer.php';
     ?>
+     <script>
+function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const lines = document.querySelectorAll('.hamburger-line');
+    // const wrap = document.getElementById('wrap');
+    
+    if (menu.classList.contains('max-h-0')) {
+        menu.classList.remove('max-h-0', 'opacity-0');
+        menu.classList.add('max-h-screen', 'opacity-100');
+
+        lines[0].classList.add('rotate-45', 'top-5');
+        lines[1].classList.add('opacity-0');
+        lines[2].classList.add('-rotate-45', 'top-5)');
+        wrap.classList.add('-top-2')
+    } else {
+        menu.classList.remove('max-h-screen', 'opacity-100');
+        menu.classList.add('max-h-0', 'opacity-0');
+        lines[0].classList.remove('rotate-45', 'top-3');
+        lines[1].classList.remove('opacity-0');
+        lines[2].classList.remove('-rotate-45', 'top-3');
+        wrap.classList.remove('-top-5')
+    }
+}
+</script>
 </body>
 </html>
