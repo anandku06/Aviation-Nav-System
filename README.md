@@ -40,7 +40,7 @@ cd aviation-nav
 - **Start Apache & MySQL in XAMPP**.
 - Place the project in `htdocs/` and access it via:  
   ```
-  http://localhost/aviation-nav/frontend/index.html
+  http://localhost/aviation-nav/frontend/index.php
   ```
 
 ---
@@ -53,7 +53,7 @@ cd aviation-nav
   │   ├── getWaypoints.php      # Fetch waypoints from DB
   │   ├── getRoutes.php         # Fetch ATS routes from DB
   ├── frontend/
-  │   ├── index.html            # Main UI
+  │   ├── index.php            # Main UI
   │   ├── style.css             # TailwindCSS styles
   │   ├── script.js             # Google Earth API integration
   ├── sql/
