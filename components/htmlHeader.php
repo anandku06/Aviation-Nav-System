@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Assets/planeIcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Assets/plane2.png" type="image/x-icon">
     <?php
     $currentFileName = basename($_SERVER['PHP_SELF'], '.php');
     $formattedFileName = $currentFileName;
