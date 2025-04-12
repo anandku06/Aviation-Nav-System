@@ -22,12 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <head>
     <title>Create Custom Route</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 </head>
-<script src="https://cdn.tailwindcss.com"></script>
-
-<?php //include '../components/htmlHeader.php'; ?>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 
 <body>
     <main class="container mx-auto p-6">
@@ -52,46 +50,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </main>
 </body>
 <script>
-    const map = L.map('map').setView([20.5937, 78.9629], 5); 
+    const map = L.map('map').setView([20.5937, 78.9629], 5);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-}).addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(map);
 
 
-const waypointsDropdown = document.getElementById('waypoints');
-const markers = [];
+    const waypointsDropdown = document.getElementById('waypoints');
+    const markers = [];
 
-for (let i = 0; i < waypointsDropdown.options.length; i++) {
-    const option = waypointsDropdown.options[i];
-    const lat = option.getAttribute('data-lat');
-    const lng = option.getAttribute('data-lng');
-    const name = option.text;
+    for (let i = 0; i < waypointsDropdown.options.length; i++) {
+        const option = waypointsDropdown.options[i];
+        const lat = option.getAttribute('data-lat');
+        const lng = option.getAttribute('data-lng');
+        const name = option.text;
 
-    if (lat && lng) {
-        const marker = L.marker([lat, lng]).addTo(map).bindPopup(name);
-        markers.push(marker);
+        if (lat && lng) {
+            const marker = L.marker([lat, lng]).addTo(map).bindPopup(name);
+            markers.push(marker);
 
-        option.addEventListener('click', () => {
-            map.setView([lat, lng], 10);
-            marker.openPopup();
-        });
-    }
-}
-
-waypointsDropdown.addEventListener('change', () => {
-    const selectedOptions = Array.from(waypointsDropdown.selectedOptions);
-    const latlngs = selectedOptions.map(option => [
-        option.getAttribute('data-lat'),
-        option.getAttribute('data-lng'),
-    ]);
-
-    if (window.routeLine) {
-        map.removeLayer(window.routeLine);
+            option.addEventListener('click', () => {
+                map.setView([lat, lng], 10);
+                marker.openPopup();
+            });
+        }
     }
 
-    window.routeLine = L.polyline(latlngs, { color: 'blue' }).addTo(map);
-    map.fitBounds(window.routeLine.getBounds());
-});
+    waypointsDropdown.addEventListener('change', () => {
+        const selectedOptions = Array.from(waypointsDropdown.selectedOptions);
+        const latlngs = selectedOptions.map(option => [
+            option.getAttribute('data-lat'),
+            option.getAttribute('data-lng'),
+        ]);
+
+        if (window.routeLine) {
+            map.removeLayer(window.routeLine);
+        }
+
+        window.routeLine = L.polyline(latlngs, {
+            color: 'blue'
+        }).addTo(map);
+        map.fitBounds(window.routeLine.getBounds());
+    });
 </script>
+
 </html>
