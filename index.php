@@ -64,7 +64,7 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="/about" class="py-3 px-8 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 transition-colors">
+                        <a href="./feats/customWaypoints.php" class="py-3 px-8 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 transition-colors">
                             Explore Map
                         </a>
                         <a href="Auth.php" class="py-3 px-8 bg-sky-600 text-white rounded-lg hover:bg-sky-700 transition-colors">
