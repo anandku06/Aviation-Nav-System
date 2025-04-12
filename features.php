@@ -42,7 +42,7 @@
 
                 <button type="button" class="md:hidden  p-2 text-gray-600 hover:text-sky-600 focus:outline-none" aria-label="Toggle menu" onclick="toggleMenu()">
                     <span class="sr-only">Open main menu</span>
-                    <div class="relative h-6 w-6 " id="wrap">
+                    <div class="relative h-6 w-6 transform transition duration-300 ease-in-out" id="wrap">
                         <span class="hamburger-line absolute block h-0.5 w-8 bg-current transform transition duration-300 ease-in-out top-1"></span>
                         <span class="hamburger-line absolute block h-0.5 w-8 bg-current transform transition duration-300 ease-in-out top-3"></span>
                         <span class="hamburger-line absolute block h-0.5 w-8 bg-current transform transition duration-300 ease-in-out top-5"></span>
