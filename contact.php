@@ -93,7 +93,7 @@
                             <img src="Assets/phone.png" width="25" alt="">
                         </span>
 
-                        <a href="tel:+91 81306 10431" class="text-blue-600 hover:underline">+91 8130610431</a>
+                        <a href="tel:+91 81306 10431" class="text-blue-600 hover:underline">+(717) 550-1675</a>
 
                     </li>
                     <li class="flex items-center">
