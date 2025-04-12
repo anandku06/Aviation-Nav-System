@@ -1,23 +1,5 @@
+<?php include "./components/htmlHeader.php" ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features - AviationNav</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        .hamburger-line {
-    transition: all 0.3s ease-in-out;
-}
-.wrap{
-        transition: all 0.3s ease-in-out;
-
-    }
-</style>
-</head>
 <body class="bg-gray-50 text-gray-900">
 <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-100/30 backdrop-blur-md py-2">
     <div class="container mx-auto px-4 py-3 sm:px-6 lg:px-8">

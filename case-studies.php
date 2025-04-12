@@ -1,4 +1,4 @@
-
+<?php include "./components/htmlHeader.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
