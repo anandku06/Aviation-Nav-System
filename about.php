@@ -4,7 +4,7 @@
     <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-100/30 backdrop-blur-md py-2">
         <div class="container mx-auto px-4 py-3 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
-                <a href="/" class="flex items-center space-x-2 transition-opacity hover:opacity-80">
+                <a href="index.php" class="flex items-center space-x-2 transition-opacity hover:opacity-80">
                     <img width="30px" src="./Assets/plane.png" alt="AviationNav Logo">
                     <span class="font-display text-lg font-semibold text-navy-950">AviationNav</span>
                 </a>

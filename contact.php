@@ -4,7 +4,7 @@
 <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-100/30 backdrop-blur-md py-2">
     <div class="container mx-auto px-4 py-3 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center">
-            <a href="/" class="flex items-center space-x-2 transition-opacity hover:opacity-80">
+            <a href="./index.php" class="flex items-center space-x-2 transition-opacity hover:opacity-80">
                 <img width="30px" src="./Assets/plane.png" alt="AviationNav Logo">
                 <span class="font-display text-lg font-semibold text-navy-950">AviationNav</span>
             </a>
@@ -42,7 +42,6 @@
                 <a href="./data-sources.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Data Sources</a>
                 <a href="./case-studies.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Case Studies</a>
                 <a href="./contact.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Contact</a>
-                <!-- <a href="/explore.php" class="block px-4 py-3 text-base font-medium text-white bg-sky-600 hover:bg-sky-700 transition-colors">Explore Map</a> -->
                 <a href="./Auth.php" class="block px-4 py-3 text-base font-medium text-white bg-sky-600 hover:bg-sky-700 transition-colors">Get Started</a>
             </div>
         </div>
@@ -82,22 +81,7 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="bg-white rounded-lg shadow-lg p-8">
-                <h2 class="text-2xl font-semibold mb-6">Send Us a Message</h2>
-
-                <!-- Success Message after form submission -->
-              
-
-                <!-- Form -->
-                <form method="POST" action="" class="mt-4 space-y-4">
-                    <input type="text" name="name" placeholder="Full Name" class="w-full px-4 py-2 border rounded-md" required>
-                    <input type="email" name="email" placeholder="Email Address" class="w-full px-4 py-2 border rounded-md" required>
-                    <input type="text" name="subject" placeholder="Subject" class="w-full px-4 py-2 border rounded-md" required>
-                    <textarea name="message" placeholder="Message" class="w-full px-4 py-2 border rounded-md" rows="5" required></textarea>
-                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">Send Message</button>
-                </form>
-            </div>
+            <?php include "./components/message.php" ?>
         </div>
     </div>
 </main>
