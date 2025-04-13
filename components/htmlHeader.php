@@ -1,3 +1,11 @@
+<?php
+// Start session at the beginning of every page
+session_start();
+
+// Check if user is logged in
+$isLoggedIn = isset($_SESSION['user_id']);
+$userName = $isLoggedIn ? $_SESSION['user_name'] : '';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +28,6 @@
 
         .wrap {
             transition: all 0.3s ease-in-out;
-
         }
     </style>
 </head>
