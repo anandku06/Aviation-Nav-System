@@ -40,6 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <title>Create Custom Route</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="../Assets/plane2.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 </head>

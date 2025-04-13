@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.css"></script>
+    <link rel="shortcut icon" href="../Assets/plane2.png" type="image/x-icon">
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 </head>
 
