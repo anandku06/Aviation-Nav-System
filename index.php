@@ -64,7 +64,7 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="./feats/customWaypoints.php" class="py-3 px-8 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 transition-colors">
+                        <a href="index.php" class="py-3 px-8 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 transition-colors">
                             Explore Map
                         </a>
                         <a href="Auth.php" class="py-3 px-8 bg-sky-600 text-white rounded-lg hover:bg-sky-700 transition-colors">
@@ -141,28 +141,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="absolute -top-6 -right-6 w-20 h-20 bg-sky-100 rounded-full flex items-center justify-center animate-bounce">
-                        <span class="h-10 w-10 text-sky-600"><img width="30px" src="./Assets/plane.png" alt=""></span>
-                    </div> -->
-
-
-
-                    <!-- <div class="absolute -bottom-4 -left-4 px-4 py-2 bg-white rounded-lg shadow-lg animate-bounce">
-          <div class="flex items-center">
-                            <div class="w-8 h-8 rounded-full bg-sky-100 flex items-center justify-center mr-2">
-                                <span class="h-4 w-4 text-sky-600"><img width="30px" src="./Assets/location.png" alt=""></span>
-                            </div>
-                            <div>
-                                <p class="text-xs font-semibold">Current Location</p>
-                                <p class="text-xs text-gray-500">40.7128° N, 74.0060° W</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    </div> -->
-
                 </div>
             </div>
         </div>
