@@ -30,4 +30,32 @@ $userName = $isLoggedIn ? $_SESSION['user_name'] : '';
             transition: all 0.3s ease-in-out;
         }
     </style>
+    <?php if (isset($_SESSION['user_id'])): ?>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Setup profile popup functionality
+                function toggleProfilePopup(event) {
+                    event.stopPropagation();
+                    const popup = document.getElementById('profile-popup');
+                    popup.classList.toggle('hidden');
+                }
+
+                // Add event listener to the profile button when it exists
+                const profileButton = document.getElementById('profile-button');
+                if (profileButton) {
+                    profileButton.addEventListener('click', toggleProfilePopup);
+                }
+
+                // Close popup when clicking outside
+                document.addEventListener('click', function(event) {
+                    const popup = document.getElementById('profile-popup');
+                    const profileButton = document.getElementById('profile-button');
+
+                    if (popup && !popup.contains(event.target) && event.target !== profileButton) {
+                        popup.classList.add('hidden');
+                    }
+                });
+            });
+        </script>
+    <?php endif; ?>
 </head>

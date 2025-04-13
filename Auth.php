@@ -87,6 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($mode === 'signup') {
         $name = isset($_POST['name']) ? trim($_POST['name']) : '';
 
+        // Validate signup form
         if (empty($name)) {
             $errorMsg = 'Please enter your name';
         } elseif (empty($email)) {
@@ -98,6 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } elseif (strlen($password) < 8) {
             $errorMsg = 'Password must be at least 8 characters long';
         } else {
+            // Check if email already exists
             $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
             $stmt->bind_param("s", $email);
             $stmt->execute();
@@ -106,17 +108,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($result->num_rows > 0) {
                 $errorMsg = 'Email already registered. Please use a different email.';
             } else {
+                // Hash password
                 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
+                // Insert new user
                 $stmt = $conn->prepare("INSERT INTO users (name, email, password, created_at) VALUES (?, ?, ?, NOW())");
                 $stmt->bind_param("sss", $name, $email, $hashed_password);
 
                 if ($stmt->execute()) {
-                    $successMsg = 'Account created successfully! You can now log in.';
-                    $mode = 'login';
-                    $name = '';
-                    $email = '';
-                    $password = '';
+                    // Get the new user ID
+                    $user_id = $conn->insert_id;
+
+                    // Set session variables to log the user in automatically
+                    $_SESSION['user_id'] = $user_id;
+                    $_SESSION['user_name'] = $name;
+                    $_SESSION['user_email'] = $email;
+
+                    // Handle "remember me" checkbox if you want to include that option for new signups too
+                    if ($remember) {
+                        $token = bin2hex(random_bytes(32));
+
+                        // Set cookie for 30 days
+                        setcookie('aviation_remember', $token, time() + (86400 * 30), '/');
+
+                        // Store token in database
+                        $stmt = $conn->prepare("INSERT INTO remember_tokens (user_id, token, expires_at) VALUES (?, ?, DATE_ADD(NOW(), INTERVAL 30 DAY))");
+                        $stmt->bind_param("is", $user_id, $token);
+                        $stmt->execute();
+                    }
+
+                    // Redirect to home page
+                    header("Location: index.php");
+                    exit;
                 } else {
                     $errorMsg = 'Error creating account. Please try again.';
                 }
