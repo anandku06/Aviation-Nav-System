@@ -184,7 +184,7 @@
         <section class="text-center my-12">
             <h2 class="text-3xl font-semibold text-blue-900">Ready to Explore?</h2>
             <p class="text-gray-600 mb-6">Experience all these features and more by trying our interactive map.</p>
-            <a href="/" class="bg-blue-700 text-white px-6 py-3 rounded-md text-l font-medium hover:bg-blue-600 transition-colors">Launch Interactive Map</a>
+            <a href="./feats/explore.php" class="bg-blue-700 text-white px-6 py-3 rounded-md text-l font-medium hover:bg-blue-600 transition-colors" target="_blank">Launch Interactive Map</a>
         </section>
     </main>
     <?php
