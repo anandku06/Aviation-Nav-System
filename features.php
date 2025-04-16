@@ -9,10 +9,10 @@
                     <span class="font-display text-lg font-semibold text-navy-950">AviationNav</span>
                 </a>
 
-                <?php include "./components/navbar.php"?>
+                <?php include "./components/navbar.php" ?>
 
                 <div class="flex items-center space-x-4">
-                <?php if ($isLoggedIn): ?>
+                    <?php if ($isLoggedIn): ?>
                         <div class="relative">
                             <button id="profile-button" class="flex items-center space-x-1 focus:outline-none">
                                 <div class="w-8 h-8 rounded-full overflow-hidden border-2 border-sky-200">
@@ -184,7 +184,11 @@
         <section class="text-center my-12">
             <h2 class="text-3xl font-semibold text-blue-900">Ready to Explore?</h2>
             <p class="text-gray-600 mb-6">Experience all these features and more by trying our interactive map.</p>
-            <a href="./feats/explore.php" class="bg-blue-700 text-white px-6 py-3 rounded-md text-l font-medium hover:bg-blue-600 transition-colors" target="_blank">Launch Interactive Map</a>
+            <?php if ($isLoggedIn): ?>
+                <a href="./feats/explore.php" class="bg-blue-600 text-white px-6 py-3 rounded-md text-l font-medium hover:bg-blue-700 transition-colors" target="_blank">Launch Interactive Map</a>
+            <?php else: ?>
+                <a href="./Auth.php" class="bg-blue-700 text-white px-6 py-3 rounded-md text-l font-medium hover:bg-blue-600 transition-colors" target="_blank">Launch Interactive Map</a>
+            <?php endif; ?>
         </section>
     </main>
     <?php
