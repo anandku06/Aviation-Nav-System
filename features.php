@@ -24,7 +24,7 @@
                                 </svg>
                             </button>
 
-                            <!-- Profile Popup (Hidden by default) -->
+                            
                             <div id="profile-popup" class="hidden absolute right-0 top-10 z-50 w-64 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
                                 <div class="p-4 flex flex-col items-center border-b border-gray-200">
                                     <div class="w-20 h-20 rounded-full overflow-hidden mb-3">
@@ -83,31 +83,7 @@
         </header>
 
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
-            <!-- <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-            <div class="text-4xl text-center mb-4">
-                <img src="images/interactive-mapping.png" alt="Interactive 3D Mapping" class="w-12 h-12 mx-auto" 
-                     onerror="this.style.display='none';this.nextSibling.style.display='block'">
-                <i class="fas fa-globe-americas" style="display:none"></i>
-            </div>
-            <h3 class="text-xl font-semibold text-blue-950 text-center">Interactive 3D Mapping</h3>
-            <p class="text-gray-600 text-sm mt-2">Explore aviation routes in a fully interactive 3D environment with detailed terrain mapping and realistic visualization.</p>
-            <div class="bg-blue-50 p-4 rounded-lg mt-4">
-                <p class="text-blue-900 font-medium text-xs"><strong>Benefit:</strong> Gain a better spatial understanding of routes and approach paths in relation to terrain.</p>
-            </div>
-        </div> -->
-
-            <!-- <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-            <div class="text-4xl text-center mb-4">
-                <img src="images/navigation-data.png" alt="Comprehensive Navigation Data" class="w-12 h-12 mx-auto"
-                     onerror="this.style.display='none';this.nextSibling.style.display='block'">
-                <i class="fas fa-chart-bar" style="display:none"></i>
-            </div>
-            <h3 class="text-xl font-semibold text-blue-950 text-center">Comprehensive Navigation Data</h3>
-            <p class="text-gray-600 text-sm mt-2">Access detailed data for thousands of waypoints, VORs, NDBs, airports, and ATS routes from official aviation sources.</p>
-            <div class="bg-blue-50 p-4 rounded-lg mt-4">
-                <p class="text-blue-900 font-medium text-xs"><strong>Benefit:</strong> Plan with confidence using accurate, up-to-date navigational information.</p>
-            </div>
-        </div> -->
+         
 
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
                 <div class="text-4xl text-center mb-4">
@@ -148,18 +124,7 @@
                 </div>
             </div>
 
-            <!-- <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-200">
-            <div class="text-4xl text-center mb-4">
-                <img src="images/collaboration.png" alt="Collaboration Tools" class="w-12 h-12 mx-auto"
-                     onerror="this.style.display='none';this.nextSibling.style.display='block'">
-                <i class="fas fa-users" style="display:none"></i>
-            </div>
-            <h3 class="text-xl font-semibold text-blue-950 text-center">Collaboration Tools</h3>
-            <p class="text-gray-600 text-sm mt-2">Share routes and maps with other pilots or aviation enthusiasts with a simple link or embed code.</p>
-            <div class="bg-blue-50 p-4 rounded-lg mt-4">
-                <p class="text-blue-900 font-medium text-xs"><strong>Benefit:</strong> Facilitate coordination and planning among flight crew members or flying clubs.</p>
-            </div>
-        </div> -->
+            
         </section>
 
         <section class="bg-blue-50 p-8 rounded-lg text-center mt-12 w-full max-w-4xl">
@@ -198,8 +163,7 @@
         function toggleMenu() {
             const menu = document.getElementById('mobile-menu');
             const lines = document.querySelectorAll('.hamburger-line');
-            // const wrap = document.getElementById('wrap');
-
+          
             if (menu.classList.contains('max-h-0')) {
                 menu.classList.remove('max-h-0', 'opacity-0');
                 menu.classList.add('max-h-screen', 'opacity-100');

@@ -24,7 +24,7 @@
                                 </svg>
                             </button>
 
-                            <!-- Profile Popup (Hidden by default) -->
+                           
                             <div id="profile-popup" class="hidden absolute right-0 top-10 z-50 w-64 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
                                 <div class="p-4 flex flex-col items-center border-b border-gray-200">
                                     <div class="w-20 h-20 rounded-full overflow-hidden mb-3">
@@ -70,7 +70,7 @@
                 <a href="./data-sources.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Data Sources</a>
                 <a href="./case-studies.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Case Studies</a>
                 <a href="./contact.php" class="block px-4 py-3 text-base font-medium hover:bg-sky-50 transition-colors text-gray-700">Contact</a>
-                <!-- <a href="/explore.php" class="block px-4 py-3 text-base font-medium text-white bg-sky-600 hover:bg-sky-700 transition-colors">Explore Map</a> -->
+                
                 <a href="./Auth.php" class="block px-4 py-3 text-base font-medium text-white bg-sky-600 hover:bg-sky-700 transition-colors">Get Started</a>
             </div>
         </div>
@@ -161,8 +161,7 @@
 function toggleMenu() {
     const menu = document.getElementById('mobile-menu');
     const lines = document.querySelectorAll('.hamburger-line');
-    // const wrap = document.getElementById('wrap');
-    
+   
     if (menu.classList.contains('max-h-0')) {
         menu.classList.remove('max-h-0', 'opacity-0');
         menu.classList.add('max-h-screen', 'opacity-100');

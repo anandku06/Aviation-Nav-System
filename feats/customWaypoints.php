@@ -6,27 +6,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $source = $_POST['source'];
     $destination = $_POST['destination'];
 
-    // Validate both points are selected
+    
     if ($source === $destination) {
         die("Source and destination cannot be the same!");
     }
 
-    // Use prepared statements
+
     $stmt = $conn->prepare("INSERT INTO routes (user_id, name) VALUES (?, ?)");
     $userId = 1;
     $stmt->bind_param("is", $userId, $routeName);
     $stmt->execute();
     $routeId = $stmt->insert_id;
 
-    // Insert source (sequence 1) and destination (sequence 2)
+  
     $stmtWaypoint = $conn->prepare("INSERT INTO route_waypoints (route_id, waypoint_id, sequence) VALUES (?, ?, ?)");
     
-    // Insert source
+  
     $sequence = 1;
     $stmtWaypoint->bind_param("iii", $routeId, $source, $sequence);
     $stmtWaypoint->execute();
     
-    // Insert destination
+    
     $sequence = 2;
     $stmtWaypoint->bind_param("iii", $routeId, $destination, $sequence);
     $stmtWaypoint->execute();
@@ -121,12 +121,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 parseFloat(destOption.getAttribute('data-lng'))
             ];
 
-            // Clear existing layers
+         
             if (routeLine) map.removeLayer(routeLine);
             if (sourceMarker) map.removeLayer(sourceMarker);
             if (destMarker) map.removeLayer(destMarker);
 
-            // Add new markers
+          
             sourceMarker = L.marker(sourceLatLng, {color: 'green'})
                 .addTo(map)
                 .bindPopup(`Source: ${sourceOption.textContent}`);
@@ -135,11 +135,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 .addTo(map)
                 .bindPopup(`Destination: ${destOption.textContent}`);
 
-            // Draw route line
+            
             routeLine = L.polyline([sourceLatLng, destLatLng], {color: 'blue'}).addTo(map);
             map.fitBounds(routeLine.getBounds());
 
-            // Calculate distance
+         
             const distance = sourceMarker.getLatLng().distanceTo(destMarker.getLatLng());
             distanceInfo.textContent = `Distance: ${(distance/1000).toFixed(2)} km`;
         }
