@@ -162,7 +162,7 @@
 
             <div class="mt-10 text-center">
                 <p class="text-gray-600 mb-4">Still have questions?</p>
-                <a href="/contact" class="text-sky-600 hover:text-sky-800 font-medium">Contact our support team</a>
+                <a href="/contact.php" class="text-sky-600 hover:text-sky-800 font-medium">Contact our support team</a>
             </div>
         </div>
     </main>
