@@ -1,5 +1,5 @@
 <div class="bg-white rounded-lg shadow-lg p-8">
-    <h2 class="text-2xl font-semibold mb-6">Send Us a Message</h2>
+    <h2 class="text-2xl font-semibold mb-6">For Any Enquires... 🎧</h2>
     <form method="POST" class="mt-4 space-y-4">
         <input type="text" name="name" placeholder="Full Name" class="w-full px-4 py-2 border rounded-md" required>
         <input type="email" name="email" placeholder="Email Address" class="w-full px-4 py-2 border rounded-md" required>
